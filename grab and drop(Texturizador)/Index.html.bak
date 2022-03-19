@@ -1,0 +1,17 @@
+<HTML>
+	<HEAD>
+		<link href="CSS/estilo.css" rel="stylesheet" type="text/css">
+		
+	</HEAD>
+	<BODY>
+		<DIV CLASS="Texturas">
+			<div class="textura1"></div>
+			<div class="textura2"></div>
+			<div class="textura3"></div>
+			<div class="textura4"></div>
+		</DIV>
+		<DIV CLASS="zona" ID="zona">
+		</DIV>
+		<script src="JavaScript/logica.js"></script>
+	</BODY>
+</HTML>
