@@ -1,0 +1,43 @@
+
+<!-- Refrescar la pagina -->
+<HTML>
+   <HEAD>
+       <MEtA HTTP-EQUIV="refresh" CONTENT="25"> <!-- refresca la pagina -->
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css">
+		
+		<!-- linkea mi archivo .js -->
+  </HEAD>
+   <HEADER>
+        <div class="container"> <!-- contenedor, contiene el menu -->
+            
+        </div> 
+          
+   </HEADER>
+   <BODY>
+		<div class="container"> <!-- contenedor, contiene el menu -->
+            <p class="caja1">Manual de procedimientos equipos loteka "Grupo Joselito"<p>
+			
+        </div> 
+		
+		<div class="grid-container">
+				<div class="cajas1" ></div>
+				<div class="cajas4" ></div>
+				<div class="cajas2" ></div>
+				<div class="cajas4" ></div>
+				<img class="cajas3" src="img\b.png"  ></img>
+				<div class="cajas4" ></div>
+				<div class="cajas2" ></div>
+				<div class="cajas4" ></div>
+				<div class="cajas1" ></div>
+		</div>
+   </BODY>
+   <FOOTER>
+		<p class="caja2">caja 2
+        Copyright ---> Junior Rafael Aquino De Leon 
+		Ultima actualizacion 01 de febrero del 2022<!-- mi pie de paginas -->
+		<p>
+        <BR>
+        
+   </FOOTER>
+</HTML>

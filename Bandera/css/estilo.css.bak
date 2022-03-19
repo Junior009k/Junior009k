@@ -1,0 +1,66 @@
+Body
+{
+	Background-color:#00bfff;
+}
+
+.caja1
+{
+	Background-color:#fffaf0;
+	Text-Align:center;
+	font-size:20px;
+	color:#00bfff;
+	padding:50px;
+		
+}
+
+.grid-container
+{
+	position:relative;
+	MARGIN-left:250px;
+	display: grid;
+	width:375px;
+	height:375px;
+    grid-template-columns: 150px 75px 150px;
+	grid-template-rows: 150px 75px 150px;
+	Background-color:white;
+}
+
+.cajas1
+{
+	Background-color:red;
+}
+.cajas2
+{
+	Background-color:blue;
+}
+.cajas3
+{
+	width:75px;
+	height:75px;
+}
+
+
+
+.caja2
+{
+	Background-color:blue;
+}
+
+
+@media only screen and (max-width: 768px){
+  Body {
+    background-color:#000000;
+  }
+  .GRID-CONTAINER
+{
+	margin-left:50px;
+		
+}
+  .caja1
+{
+	font-size:30px;
+	color:#00bfff;
+	background-color:#FFFFFF;
+		
+}
+}
