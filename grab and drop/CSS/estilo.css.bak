@@ -1,0 +1,19 @@
+Body
+{
+	Background-color:#898989
+}
+.Cuadrado
+{
+	padding:100px 200px;
+	Background:#ccc;
+	margin:50px;
+}
+
+.Circulo
+{
+	border-radius:60%;
+	padding:40px;
+	MARGIN:10px;
+	background:#f00;
+	display:inline-block;
+}

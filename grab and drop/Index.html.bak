@@ -1,0 +1,12 @@
+<HTML>
+	<HEAD>
+		<link href="CSS/estilo.css" rel="stylesheet" type="text/css">
+		<script src="JavaScript/logica.js"></script>
+	</HEAD>
+	<BODY>
+		<DIV CLASS="Circulo" ID="Circulo">
+		</DIV>
+		<DIV CLASS="Cuadrado" ID="Cuadrado">
+		</DIV>
+	</BODY>
+</HTML>
