@@ -1,0 +1,8 @@
+function p()
+{
+	alert("hola");
+};
+function abrirIndex()
+{
+	window.open('servicios.html');
+}

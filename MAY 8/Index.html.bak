@@ -1,0 +1,92 @@
+
+<!-- Refrescar la pagina -->
+<HTML>
+   <HEAD>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/estilo.css" rel="stylesheet" type="text/css">
+		<script src="JavaScript/JavaS.js"></script>
+		<!-- linkea mi archivo .js -->
+		
+  </HEAD>
+   <HEADER>
+        JQ Tecnology
+   </HEADER>
+   <BODY>
+		<div class="container"> <!-- contenedor, contiene el menu -->
+            <p class="caja1">
+				JQ Tecnology
+			<p>
+		</div>
+		<div class="menu"> <!-- contenedor, contiene el menu -->
+            <div type="button" class="cajas" onclick="p()">Inicio</div>
+			<a href="servicios.html"><div type="button" class="cajas" onclick="abrirServiios()">Servicios</div></a>
+			<div type="button" class="cajas" onclick="p()">Portafolio</div>
+			<div type="button" class="cajas" onclick="p()">ayuda</div>
+        </div> 
+		<div class="Flex-container">
+			<div class="contenido1" >
+				<img class="imagen" src="img/jnr.jpeg"  >
+			</div>
+			<div class="Desarrollo" >
+								<H1>JUNIOR RAFAEL AQUINO DE LEON<BR>
+								junior009k@gmail.com<BR>
+								829-863-2015<BR><BR><BR><BR></H1>
+				
+								<H2>HABILIDADES/ HERRAMIENTAS TÉCNICAS <BR><BR></H2>
+                <DIV Class="parrafo">                
+								<H3>BASE DE DATOS:</H3><H4>(MySQL, ORACLE, PHPADMIN, JBDC)</H4>
+                               <H3>PROGRAMACION:</H3><H4>(Lenguaje C++, C, C#, JAVA, PYTHON)</H4>
+							   <H3>PROGRAMACION WEB:</H3><H4>(HTML,CSS,ASP,JAVASCRIPT,PHP,CMS,WORDPRESS.)</H4>
+                                <H3>SISTEMAS OPERATIVOS:</H3><H4>Windows, Linux </H4>
+				</div>
+								<H2><BR><BR>EDUCACIÓN Y CERTIFICACIONES<BR><BR></H2>
+				<DIV Class="parrafo">				
+								<H3>TÉCNICO EN ELECTRICIDAD<BR></H3>
+								<H4>POLITÉCNICO EMMA BALAGUER  <BR>   </H4>                                                                                                                                       
+								<H3>9NO SEMESTRE DE LICENCIATURA EN INFORMÁTICA<BR></H3>
+								<H4>(UASD)<BR></H4>
+								<H3>INGLES BÁSICO<BR></H3>
+								<H3>TÉCNICO EN INFORMÁTICA<BR></H3>
+								<H4>UNIVERSIDAD AUTÓNOMA DE SANTO DOMINGO<BR></H4>
+				</div>
+								<H2><BR>EXPERIENCIA LABORAL<BR><BR></H2>
+				<DIV Class="parrafo">
+								<H3>SOPORTE TÉCNICO, CONSORCIO DE BANCA JOSELITO<BR></H3>
+								<H4>2 AÑOS Y 6 MESES<BR></H4>
+				</div>
+								<H2><BR>PROYECTOS<BR><BR></H2>
+				<DIV Class="parrafo">				
+								<H3>PROYECTO SYSTEMBASICPAS(JAVA,MYSQL,NETBEANS 8.2)<BR></H3>
+								<H4>Es un programa básico que permite al usuario iniciar sesión, crear usuario y cambiar contraseña, crear reportes y almacenar un manual de los problemas que se puedan presentar y sus soluciones, todo eso conectado a una base de datos.<BR></H4>
+				
+								<H3>SISTEMA FINANCIERO(C#, VISUAL STUDIO)<BR></H3>
+								<H4>Es un programa que nos permite calcular las operaciones financieras que se realizan a diario como el interés simple, compuesto, el descuento y anualidades.<BR></H4>
+<H3>
+								<H3>PAGINA WEB (HTML, JAVASCRIPT, PHP)<BR></H3>
+								<H4>Es una página de presentación, donde tenía que crear un entorno en HTML, diseñarlo con css e implementar algunas condicionales utilizando JavaScript, también poseo plantillas de exhibición<BR></H4>
+				</div>					
+
+			</div>
+			<div class="contenido2" >
+				<img class="imagen" src="img/jnr.jpeg"  >
+			</div>
+			
+			<div class="Portafolios" >
+				portafolio
+			</div>
+		</div>
+		
+   </BODY>
+   <FOOTER>
+		<p class="caja2">
+			Instagram:Junioraquinodeleon<br>
+			Facebook:Junioraquinodeleon1<br>
+			Gmail:junior009k@gmail<br>
+			Copyright ---> toda esta pagina fue realizada por Junior Rafael Aquino De Leon 
+			Ultima actualizacion 07 de marzo del 2022
+		<!-- mi pie de paginas -->
+		<p>
+        <BR>
+        
+   </FOOTER>
+</HTML>
