@@ -1,0 +1,37 @@
+Body
+{
+	Background-color:#898989
+}
+.Ascensor
+{
+	display:flex;
+	flex-direction: column-reverse;
+	width:100px;
+	height:575px;
+	margin-top:125px;
+	margin-left:400px;
+
+}
+.piso
+{
+	Background:#fFF;
+	width:105px;
+	height:400px;
+	text-align:center;
+}
+
+
+.Control
+{
+	Display: grid;
+	Background-color:#888;
+	width:100px;
+	height:100px;
+	grid-template-rows:50px 50px;
+	grid-template-columns:50px 50px;
+}
+
+DIV H1
+{
+	color:#fff
+}

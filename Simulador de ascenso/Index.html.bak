@@ -1,0 +1,26 @@
+<HTML>
+	<HEAD>
+		<link href="CSS/estilo.css" rel="stylesheet" type="text/css">
+		
+	</HEAD>
+	<BODY>
+	    <DIV class="Titulo">
+			<H1>
+				ASCENSOR THE HEIST
+			</H1>
+		</DIV>
+		<DIV class="Ascensor" id="Ascensor" value="2"> 
+		</DIV>
+		<DIV class="Control" id="Control" v> 
+			<INPUT type="button" value="1" onclick="solicitarAscensor(1,'abierto','cerrado')" id="1" class="boton">
+			<INPUT type="button" value="2" onclick="solicitarAscensor(2,'abierto','cerrado')" id="2" class="boton">
+			<INPUT type="button" value="3" onclick="solicitarAscensor(3,'abierto','cerrado')" id="3" class="boton">
+			<INPUT type="button" value="4" onclick="solicitarAscensor(4,'abierto','cerrado')" id="4" class="boton">
+		</DIV>
+		<div id="txt">
+			<p>primer parrafo hijo de div id="txt"</p>
+			<p>segundo parrafo hijo de id="txt" txt</p>
+		</div>
+		<script src="JavaScript/logica.js"></script>
+	</BODY>
+</HTML>
