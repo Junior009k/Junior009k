@@ -1,0 +1,28 @@
+/*este es el estilo del body
+color rosado #ff26c1
+color de la letra azul #2ddcff*/
+Body
+{
+	Background-color: #ff26c1;
+	color: #2ddcff;
+    font-size: 50px;
+}
+
+/*editaremos el contenedor solo con fondo blanco y letra azul*/
+
+.contenedor
+{
+	Background-color: #642525;
+    width: 650PX;
+    height: 450px;
+    border: 8px solid #fff;
+}
+
+.contenedor-item
+{
+	color:#2ddcff;
+	font-size: 42px;
+}
+
+/*UN CONSEJO ES EDITAR EL CSS CON HTML PARA VER LOS CAMBIOS EN VIVO
+ACTUALIZAREMOS LA PAGINA*/

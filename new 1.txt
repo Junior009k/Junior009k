@@ -1,0 +1,5 @@
+Es un ejemplo de condicionales utilizando JavaScript
+
+Ingresara un monton 
+
+y el programa le mostrara el  helado que se puede comprar
