@@ -1,0 +1,136 @@
+body
+{
+    Background-color: rgb(3 2 33);
+    
+}
+.titulo2
+{
+   
+    font-size: 60px;
+    color:rgb(255, 255, 255);
+    text-align-last: center;
+}
+.titulo
+{
+   
+    font-size: 60px;
+    color:rgb(255, 255, 255);
+}
+
+.jugador 
+{
+    font-size: 24px;
+    color: #FFF;
+    Background-color: rgb(3 2 33);
+    width: fit-content;
+    border: solid 8px rgb(132 53 0);
+    margin-top: 12px;
+}
+
+/*un tablero de damas tiene 8 columnas y 10 filas asi que la definiremos ahora*/
+.Grid-container
+{
+    display:grid;
+    grid-template-columns:REPEAT(8,50PX)   ;
+    grid-template-rows:REPEAT(10,50PX) ;
+    JUSTIFY-CONTENT: CENTER;
+}
+ /*60px*/
+.cuadro
+{
+    font-size: 45px;
+    border:2px solid rgb(132, 53, 0);
+    TEXT-ALIGN-LAST: CENTER;
+}
+
+.cantidadDeFichas
+{
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    border: solid 6px rgb(132 53 0);
+    width: fit-content;
+    margin-top: 12px;
+}
+.fichasJugador
+{
+    color:#fff;
+    font-size: 24px;
+    border: solid 1px rgb(132 53 0);
+}
+
+#fichasJ1
+{
+    background-color: #00F;
+}
+#fichasJ2
+{
+    background-color: #F00;
+}
+.ganador
+{
+    color: #fff80f;
+    font-size: 128px;
+    width: max-content;
+    height: max-content;
+    background: #f00;
+}
+.caja2
+{
+	color:#00bfff;
+	text-align:center;
+}
+
+/* con esta parte adaptaremos nuestro codigo para que funcione en celular*/
+@media only screen and (max-width: 400px)
+{
+.titulo2
+{
+   
+    font-size: 30px;
+    text-align-last: center;
+}
+.titulo
+{
+   
+    font-size: 30px;
+}
+.jugador 
+{
+    font-size: 12px;
+    border: solid 2px rgb(132 53 0);
+    margin-top: 12px;
+}
+.Grid-container
+{
+    display:grid;
+    grid-template-columns:REPEAT(8,25PX)   ;
+    grid-template-rows:REPEAT(10,25PX) ;
+}
+ /*60px*/
+.cuadro
+{
+    font-size: 22px;
+    border:1px solid rgb(132, 53, 0);
+    
+}
+
+.cantidadDeFichas
+{
+    font-size: 12px;
+    border: solid 2px rgb(132 53 0);
+    margin-top: 12px;
+}
+.fichasJugador
+{
+    font-size: 12px;
+    border: solid 1px rgb(132 53 0);
+}
+.caja2
+{
+    margin-top: 200px;
+    font-size: 12px;
+	color:#00bfff;
+	text-align:center;
+}
+}

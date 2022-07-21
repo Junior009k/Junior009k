@@ -1,0 +1,307 @@
+vamos hacer un concepto de lo que es un juego de damas primero crearemos un archivo y despues le damos forma a nuestro contenedor
+
+vamos hacer que este tablero sea funcional para hacerlo primero agregar la ficha utilizando el mismo metodo que utilizamos para
+crear el tablero
+
+
+una vez el tablero esta creado ahora viene la parte un poco compleja ya que trabajaremos con eventos
+
+entonces validaremos que solo se mueva entre los cuadros blancos
+
+nota:utilizando promesa esto hubiera sido mas sencilla pero comence con las condicionales y se me es dificil cambiar.
+
+
+vamos a configurar los movimientos del jugador 2
+
+//esto sera para mover la ficha, validaremos su movimiento ya que esta solo puede moverse en dos direcciones(MOVIMIENTO NORMAL)
+COMPLETADO 
+
+antes de eso , vamos a optimizar un poco el codigo y a pulirlo
+aun falta algunas cositas por pulir pero esto lo hare una vez terminado el testeo y quitar los (console.log)
+
+
+Aun no ,hay que seguir optimizando el codigo
+
+el codigo esta muy largo
+ 
+AHORA HAY QUE VALIDA CUANDO UNA FICHA ATACA OTR'
+
+ahora hay que hacer lo mismo pero con el jugador dos 
+
+hay fallos pero la logica de atacar esta ahi, solo faltaria por programar 
+
+LO VAMOS A DIVIDIR EN 4 ETAPAS DE DESAROLLO
+ 
+
+ETAPA DE MOVIMIENTOS:LISTA
+================================================================================================================================
+vamos a trabajar en esta etapa, creando una variable, lo que voy hacer hubiera sido mas facil si se trabaja con promesas, vamos a comenzar cuando es ataque doble
+-ataque doble
+ahora despues que validamos que se puede realizar el movimiento doble, ahora definiremos a que direccion lo movera
+La logica es la misma para jugador 2 solo que al reves yo hare copypaste
+FUNCIONA, 
+
+para no repetir codigo utilizaremos una funcion que nos servira para realizar ese proceso
+Una vez que vaya avanzando ire agregando funcion segun lo necesite ya que es una buena practica y asi automizo mi codigo 
+
+En alguna parte del codigo la bandera se vuelve ogual a 1
+cambiaremos la forma de comer, solo sera para alante
+
+-ataque triple
+vamos a trabjar con el triple ataque 
+cometi un error pero de igual forma trabajaremos en la funciones pero antes arreglar todo lo que hice 
+-ataque cuatruple
+vamos hacer el cuarto ataque
+-ataque 5 posiciones
+hasta el momento pongamos que maximo comera 5 en un futuro lo subiremos a 6
+
+como puede ver una vez que gane alguien el tablero se destruye asi no pueden seguir jugando
+================================================================================================================================
+
+ETAPA DE LA REINA:PENDIENTE 
+================================================================================================================================
+-validar cuando se convierta en reina 
+-validar los movimientos de la reina
+
+-vamos a convertirla en reina
+realizacion de segunda prueba
+ahora no tiene que haber bug
+Vamos a realizar pruebas cuando se convierte en reina, antes de realizar modifica en todo lo movimiento lo que hiciste
+lo que hice me ayudara a validar que no siga comiendo despues de alcanzar el limite
+tienen que tener cuidado alm copiar y pegar ya que puede dar ese tipo de error
+
+Vamos a validar otra vez, ya que modifique todo el codigo
+pequeno error una variable estaba mal escrita 
+
+realizamos la prueba otra vez
+
+Es parte de testing del juego y funciona ahora llego el turno de hacer mover a la reina 
+
+Entrando con un movimiento NORMAL======> Funciona 
+Entrando con un ataque======> Funciona 
+si entro con ataque doble ======> funciona
+Entrando con un ataque triple ======> funciona; El chico se emocionaba xddxdxd
+Entrando con un ataque cuadruple  ======> funciona
+Entrando con un ataque 5to seguido ======> funciona
+
+
+para hacer mover a la reina lo que hay que hacer es solo habilitarla para que se mueva o sea
+una reina puede moverse de forma normal y como reina pero una ficha solo puede moverse como ficha 
+
+la logica seria la siguiente 
+lo primero es tener un perimetro de hacia donde puede moverse la reina 
+
+la reina puede moverse en las cuatros direcciones 
+
+asi que tendriamos algo asi,posible movimiento de la reina 
+reina movimientoIzquierdaArriba hasta obstaculo
+reina movimientoDerechaArriba hasta obstaculo
+reina movimientoIzquierdaAbajo' hasta obstaculo
+reina movimientoDerechaAbajo' hasta obstaculo
+
+podemos seleccionar la reina,ahora hay que validar a que posicion pueden andar
+Esto es como si estuvieramos validando un  ataque 
+
+una vez tengamos toda las posibilidades de la reina, lo que tendremos que hacer es selecciona una de estas 
+
+Realizamos una peque;a prueba
+
+para validar el ataque sera almacenar los cuatros limietes, entonces validarlo como si fuera un ataque 
+
+
+==Buscar la forma de comer hacia atras
+==has que se ponga en blanco al seleccionar un cuadro 
+==comienza los movimientos de la reina 
+==hacer ataque 
+==hacer 2 ataque 
+==hacer 3 ataque 
+==hacer 4to ataque 
+==hacer 5to ataque
+================================================================================================================================
+
+ETAPA DE LAS ESTADISTICA:LISTA
+================================================================================================================================
+Quiero que este proyecto , este funcional lo mas rapido posible, por eso me salte la etapa de la reina
+el juego funcionara pero sin la funcion de la reina en un futuro se la agregamos
+
+
+-validar ganador 
+comenzamos creando una funcion que me extraera todos los datos, del tablero 
+ya identifica la cantidad de ficha, cuando llegue a cero sera el ganador 
+
+arreglaremos ese bug despues ahora me interesa como se ve, vamos a poner hermoso nuestro tablero
+================================================================================================================================
+
+ETAPA DE OPTIMIZACION 
+-Arreglar los bug
+vamos arreglar los error de uncaught ya que esto no nos permite continuar con la etapa de movimiento 
+arreglaremos los cannot read of null
+-Descubri un bug, otra ficha puede robarle la comida, asi que validaremos que solo la ficha que esta comiendo pueda comer
+-no esta actualizando los estado 
+
+Volvemos a la etapa de optimizacion 
+
+VALIDAR ATAQUE
+-no deberia ponerse verde, hay que ver porque lo hace 
+-el mismo procedimiento que hicimos lo haremos en los demas ataque 
+-validar que los datos se actualizan correctamente
+-hacer que coma hacia atras===
+VALIDAR DOBLE ATAQUE
+-Inplementacion de validacion mas estricta BIEN
+-validar que los datos se actualizan correctamente
+VALIDAR TRIPLE ATAQUE 
+-Inplementacion de validacion mas estricta BIEN
+-validar que los datos se actualizan correctamente
+VALIDAR CUARTO ATAQUE CONSECUTIVO 
+-Inplementacion de validacion mas estricta BIEN 
+-validar que los datos se actualizan correctamente
+VALIDAR QUINTO ATAQUE CONSECUTIVO
+-Inplementacion de validacion mas estricta
+(es dificil hacer esta validacion pero encontrare la jugada)
+no hizo el quito ataque porque la posicion no se actualizaron
+-validar que los datos se actualizan correctamente
+
+
+
+estamos validando la actualizacion de los estado
+los datos no se estan actualizando desde el triple ataque 
+ficha del jugador=0 cuadro esta vacio
+ficha del jugador=1 cuadro posee ficha del jugador 1
+ficha del jugador=2 cuadro posee ficha del jugador 2
+
+//prueba 1, FRACASO
+Eso deben ser los valores , validamos
+51=0 BIEN
+33=0 MAL 
+55=0 BIEN
+37=1 BIEN 
+42=0 BIEN 
+44=0 BIEN
+46=0 BIEN
+los datos no se estan actualizando desde el triple ataque 
+//prueba 2
+Eso deben ser los valores , validamos
+51=0 BIEN
+33=0 MAL
+55=0 MAL
+37=1 BIEN 
+42=0 BIEN 
+44=0 BIEN
+46=0 BIEN
+
+//prueba 3;EXITOSA Actualizamos los valores , no tenia la variable que era
+Eso deben ser los valores , validamos
+51=0 BIEN
+33=0 BIEN
+55=0 BIEN
+37=1 BIEN 
+42=0 BIEN 
+44=0 BIEN
+46=0 
+
+
+
+//prueba 1;EXITOSA Actualizamos los valores , no tenia la variable que era
+Eso deben ser los valores , validamos
+51=0 BIEN
+33=0 BIEN
+55=0 BIEN
+37=1 BIEN 
+42=0 BIEN 
+44=0 BIEN
+46=0 BIEN
+
+//toca arreglar el error que ocurre cuando se esta comiendo cerca del limite del tablero
+//cuando el jugador 2 come sigue jugando, arreglar eso:SOLUCIONADO
+##lo hiso de nuevo xd
+vamos arreglar este error
+
+//agregar animacion del tablero destruyendose
+//validar si el jugador quiere jugar otra partida
+
+
+===SOLUCIONADO//para el proximo video //
+solucionaremos los error--no me dio el error, no me esta dando el error , voy a jugar una partida completa(nos dio el error)
+hay que validar los limites del tablero 
+hsy debe estar resuelto, si sigue el problema entonces lo igualare a null 
+no realiza ataque doble
+
+==tiene que realizar 
+haremos un testeo  
+es imposible bajar la ficha azul , ya que no come hacia atras, esta es la parte que este se convierte en reina
+la ficha azul va a hacer una jugada triple quizas esto no provoque el bug
+en la partida completa solo tuvimos 8 bugs hasta ahora funciona todo bien 
+luego lo pondremos en null
+
+vamos a solucionar cuando esta comiendo en la esquina
+terminaremos la etapa de ESTADISTICA
+
+
+//para el penultimo video 
+desarrollaremos a la reina
+lo primero es saber cuando se convierte en la reina , y es cuando llegua a la ultima fila asi que podemos decir 
+si jugador 1 esta en la fila cuando el eje x es igual 0, convierte en reina
+si jugador 2 esta en la fila cuando el eje x es igual 7, convierte en reina
+
+
+====empezare con su funcionalidad===============
+vamos empezar la funcionalidad de la reina 
+Comenzaremos con el movimiento de la reina, ya esta facil 
+es la misma logica, lo dificil era predecir cual movimiento iba a tomar 
+vamos a realizar la prueba para ver si mi diagrama esta en lo correcto(mal)
+while no hace dos validaciones o eso creo
+prueba 
+posicion a donde puede ir 
+Diagonal superior izquierda(FUNCIONA)
+Diagonal Inferior Derecha(FUNCIONA)
+Diagonal superior izquierda(FUNCIONA)
+Diagonal Inferior Derecha(FUNCIONA)
+
+ahora toca que el jugador #2 se corone
+para hacer esto lo vamos hacer en tres pasos 
+
+vamos a convertirla en reina (FUNCIONA)
+Descomentaremos y validaremos las posibilidades de la reina 
+Diagonal superior izquierda()
+Diagonal Inferior Derecha()
+Diagonal superior izquierda()
+Diagonal Inferior Derecha()
+y por ultimo comeremos
+
+ahora vamos a comer 
+LA REINA SOLO PUEDE ATACAR EN CUATRO direcciones 
+asi que lo que haremos es definir estas cuatro direcciones para que sean estables 
+
+[0] Diagonal superior izquierda -x -y
+[1] Diagonal superior Derecha -x +y
+[2] Diagonal inferior izquierda +x -y
+[3] Diagonal inferior Derecha +x +y
+vamos a limitar la posibilidades de comer 
+una vez tenga las posibilidad de ataque ahora voy a comer
+el programa calcula la posibilidades donde la reina puede moverse, 
+asi que solo hay que calcular la posibilidades del ataque 
+
+para el proximo video segundo ataque pero vamos a programar lo que hicimos para el jugador 2
+(es el mismo proceso)
+//me funcionara a la primera? , no lo hizo 
+
+ya solo falta comer hacia atras 
+2do, 3er, 4to y el 5to ataque de la reina 
+====mejorare la interfaz==================
+
+//para el ultimo video 
+===refinaremos el juego========
+Dividir el codigo por metodo 
+
+
+//habran mas videos 
+hay mucha mala practica en el codigo
+actualmente tiene alrededor de 1800 linea de codigo y eso es una exageracion , asi que de vez en cuando subire video optimizandolo
+pero para ser sincero es mejor hacerlo desde cero.
+gracias por ver este video
+
+
+-----------------------------------------------------------------------------
+Elaborare la version de produccion, o sea la que sera lanzada este miercoles
+tambien la hare que se pueda disfrutar el celular para esto modificaremos algunas cosas en css y con viewport
+ya esta version esta lista , el miercoles estara disponible con todo y este codigo fuente en mi pagina web
