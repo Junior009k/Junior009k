@@ -1,9 +1,6 @@
-{   
-    "Maestro":
-    [
-        { 
-            "nombre":"juan lopez",
-            "perfil":"Maestro"
-        }
-    ]
-}
+[
+      { 
+           "nombre":"juan lopez",
+           "perfil":"Maestro"
+      }
+]
