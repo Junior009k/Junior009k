@@ -3,4 +3,9 @@
            "nombre":"juan lopez",
            "perfil":"Maestro"
       }
+      ,
+      { 
+           "nombre":"Mario jimenez",
+           "perfil":"Maestro"
+      }
 ]
